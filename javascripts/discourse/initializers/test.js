@@ -8,7 +8,7 @@ export default {
             api.onPageChange(x => {
                 if (x == "/login") {
                     debugger;
-                    document.getElementsByClassName("login-required").innerText = "<h1>Testing</h1>"
+                    document.getElementByClassName("login-required").innerText = "<h1>Testing</h1>"
                     //fetch("https://raw.githubusercontent.com/json-iterator/test-data/master/large-file.json")
                     //    .then((response) => response.json())
                     //    .then((data) => console.log(data));
