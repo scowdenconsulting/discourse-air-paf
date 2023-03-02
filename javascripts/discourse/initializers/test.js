@@ -5,7 +5,13 @@ export default {
     initialize() {
 
         withPluginApi('0.8', api => {
-            api.onPageChange(x => console.log(x));
+            api.onPageChange(x => {
+                if (x == "/login") {
+                    fetch("http://ip.jsontest.com/")
+                        .then((response) => response.json())
+                        .then((data) => console.log(data));
+                }
+            });
         });
 
     }
