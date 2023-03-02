@@ -1,1 +1,3 @@
-console.log('scott test');
+<script>
+    console.log('scott test');
+</script>
